@@ -1,0 +1,13 @@
+// api/fees/lpu.js
+export default function handler(req, res) {
+  const data = {
+    university: "Lovely Professional University (Demo)",
+    year: 2021,
+    courses: [
+      { name: "B.Tech CSE", fee_min: 90000, fee_max: 240000, duration: "4 years" },
+      { name: "MBA", fee_min: 80000, fee_max: 150000, duration: "2 years" },
+      { name: "B.Design", fee_min: 50000, fee_max: 120000, duration: "4 years" }
+    ]
+  };
+  res.status(200).json(data);
+}
